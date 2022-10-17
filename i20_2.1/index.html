@@ -9,9 +9,12 @@
             <div class="product">
                 <div class="product__preview">
                     <div class="product__gallery">
-                        <img  src="./images/icons/shirt_1.png" width="200px" height="170px">
-                        <img  src="./images/icons/shirt_2.png" width="200px" height="170px">
-                        <img  src="./images/icons/shirt_3.png" width="200px" height="170px">
+                        <img class="product__gallery-img" src="images/icons/shirt_1.png" width="200px" height="170px">
+                        <img class="product__gallery-img" src="images/icons/shirt_2.png" width="200px" height="170px">
+                        <img class="product__gallery-img" src="images/icons/shirt_3.png" width="200px" height="170px">
+                    </div>
+                    <div class="product__main-img" >
+                        <img src="images/icons/shirt_1.png" alt="" id="mainImage">
                     </div>
                 </div>
             </div>
@@ -31,26 +34,22 @@
 
                 <div class="product__info">
                     <div class="product__info.item">
-                        <img src="./images/icons/layer.png" alt="#" width="30px" height="25px">
+                        <img src="images/icons/layer.png" alt="#" width="30px" height="25px">
                         "В наличии в магазине"
                         <a href="https://www.lamoda.ru/">Lamoda</a>
                     </div>
                     <div class="product__info.item">
-                        <img src="./images/icons/delivery.png" alt="#" width="30px" height="25px">
+                        <img src="images/icons/delivery.png" alt="#" width="30px" height="25px">
                         "Бесплатная доставка"
                     </div>
                 </div>
 
                 <div class="product__actions">
-                    <span class="change minus min">
-                        <span>-</span>
-                    </span>
-                    <input type="text" name="productСount" value="1" disabled="">
-                    <span class="change plus">
-                        <span>+</span>
-                    </span></div>
+                    <div class="change minus" id="minus">-</div>
+                    <input type="number" id="count" name="productСount" value="1" disabled>
+                    <div class="change plus" id="plus">+</div>
+                </div>
                    
-                    <script src="./js/script.js"></script>
                     <button class="custom-btn custom-btn--blue">купить</button>
                     <button class="custom-btn">в избранное</button>
     
@@ -63,18 +62,19 @@
                 <div class="product__share">
                     <span class="product__share-title">Поделиться:</span>
                         <div class="product__share-list">
-                        <a href="https://t.me/lamoda_na_svyazi"><img src="./images/icons/telegram.png" alt="telegram" width="35px" height="35px"></a>
+                        <a href="https://t.me/lamoda_na_svyazi"><img src="images/icons/telegram.png" alt="telegram" width="35px" height="35px"></a>
                         </div>
                         <div class="product__share-list">    
-                        <a href="https://vk.com/lamodaru"><img src="./images/icons/vk.png"  alt="vk" width="35px" height="35px"></a>
+                        <a href="https://vk.com/lamodaru"><img src="images/icons/vk.png" alt="vk" width="35px" height="35px"></a>
                         </div>
                         <div class="product__share-list"></div>
-                        <a href="https://www.youtube.com/channel/UCTWIqhYGbEhPvIfpdqeOLSw"><img src="./images/icons/youtube.png" alt="youtube" width="35px" height="35px"></a>
+                        <a href="https://www.youtube.com/channel/UCTWIqhYGbEhPvIfpdqeOLSw"><img src="images/icons/youtube.png" alt="youtube" width="35px" height="35px"></a>
                     </div>
                     <span class="product__share-count"></span>
                 </div>
             </div>
         </div>
+        <script src="../js/script.js"></script>
     </body>
 </html>
 
